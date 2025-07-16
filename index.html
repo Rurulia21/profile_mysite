@@ -1,23 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-	<div id="wrap">
-	<header>
-        <h1><a href="index.html">Site Title</a></h1>
+  <header>
+    <div class="logo"><a href="index.html">TITLE</a></div>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="works.htm2l">WORKS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
 
-		<input type="checkbox" id="navBtn">  
-		<label for="navBtn" class="open"><span></span></label>
+  <main>
+    <div class="slider">
+      <button class="nav-btn prev">&#10094;</button>
 
-		<nav>
-			<ul>
-				<li><a href="index.html">TOP</a></li>
-				<li><a href="profile.html">PROFILE</a></li>
-				<li><a href="works.html">WORKS</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-			</ul>
-		</nav>
-    </header>
+      <div class="slide" id="slide-container">
+        <!-- JavaScriptで中身が動的に変わる -->
+      </div>
+
+      <button class="nav-btn next">&#10095;</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
